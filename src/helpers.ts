@@ -1,4 +1,4 @@
-import { canUseDOM as canUseDOMFlag } from 'exenv';
+import { canUseDOM as canUseDOMFlag } from 'exenv-es6';
 
 import { PlainObject } from './types';
 
@@ -12,7 +12,7 @@ export const STATUS = {
 };
 
 export function canUseDOM(): boolean {
-  return canUseDOMFlag;
+  return canUseDOMFlag();
 }
 
 export function isSupportedEnvironment(): boolean {
